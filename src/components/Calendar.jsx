@@ -16,7 +16,15 @@ export default function Calendar() {
 
 
     const [notes, setNotes] = useState({});
-    
+    useEffect(() => {
+        const saved = localStorage.getItem("notes");
+        if (saved) {
+            setNotes(JSON.parse(saved));
+        }
+    }, []);
+    useEffect(() => {
+        localStorage.setItem("notes", JSON.stringify(notes));
+    }, [notes]);
 
 
 
