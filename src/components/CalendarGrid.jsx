@@ -44,7 +44,7 @@ export default function CalendarGrid({
                 {days.map((d) => (
                     <div
                         key={d}
-                        className="text-center text-[10px] font-bold text-gray-300 tracking-tighter"
+                        className="text-center text-[10px] font-bold text-gray-800 tracking-tighter"
                     >
                         {d}
                     </div>
@@ -126,7 +126,7 @@ ${isSaturday && !isSelected && !isToday ? "text-yellow-500" : ""}
 
                                     {/* 🟡 NOTE DOT */}
                                     {hasNote && (
-                                        <span className="absolute top-1 right-1 w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
+                                        <span className="absolute top-1 right-1 w-1.5 h-1.5 bg-green-400 rounded-full"></span>
                                     )}
                                     {isHoliday && (
                                         <span className="absolute bottom-1 w-1.5 h-1.5 bg-purple-500 rounded-full"></span>

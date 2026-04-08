@@ -52,7 +52,7 @@ export default function NotesSection({ selectedDate, notes, setNotes, startDate,
 
     return (
         <div className="p-6">
-            <h3 className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">
+            <h3 className="text-[10px] font-bold text-gray-600 uppercase tracking-widest mb-4">
                 Notes {key && `(${key})`}
             </h3>
 
