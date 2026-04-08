@@ -28,7 +28,13 @@ export default function CalendarGrid({
 
     const days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 
-    
+    const holidays = {
+        "2026-01-26": { name: "Republic Day", type: "national" },
+        "2026-08-15": { name: "Independence Day", type: "national" },
+        "2026-10-02": { name: "Gandhi Jayanti", type: "national" },
+        "2026-03-14": { name: "Holi", type: "festival" },
+        "2026-11-01": { name: "Diwali", type: "festival" },
+    };
 
     return (
         <div className="p-8 flex flex-col justify-center h-full">
@@ -127,7 +133,19 @@ ${isSaturday && !isSelected && !isToday ? "text-yellow-500" : ""}
                                     )}
                                 </span>
 
-                                
+                                {/* ⭐ TOOLTIP (HOVER PREVIEW) */}
+                                {hoveredDate === dateKey && hasNote && (
+                                    <div className="absolute z-30 bottom-14 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-md shadow-lg whitespace-nowrap">
+                                        {notes[dateKey].slice(0, 20)}...
+                                    </div>
+                                )}
+                                {isHoliday && hoveredDate === dateKey && (
+                                    <div className="absolute z-30 bottom-14 left-1/2 -translate-x-1/2 bg-white border shadow-xl rounded-lg px-3 py-2 text-xs">
+                                        <p className="font-semibold text-purple-700">
+                                            🎉 {isHoliday.name}
+                                        </p>
+                                    </div>
+                                )}
                             </motion.div>
                         );
                     })}
