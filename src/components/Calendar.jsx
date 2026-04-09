@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useEffect } from "react"; // make sure this is at top
+import { useEffect } from "react"; 
 import ImageSection from "./ImageSection";
 import NotesSection from "./NotesSection";
 import CalendarGrid from "./CalendarGrid";
@@ -33,7 +33,7 @@ export default function Calendar() {
         end: null,
     };
 
-    // ✅ HANDLE DATE CLICK (FIXED)
+    
     const handleDateClick = (date) => {
         if (!date) return;
 
@@ -124,7 +124,7 @@ export default function Calendar() {
                                 );
                                 setSelectedDate(null);
                             }}
-                            className="text-gray-300 hover:text-blue-600 transition"
+                            className="text-gray-500 hover:text-blue-600 transition"
                         >
                             ←
                         </button>
@@ -142,7 +142,7 @@ export default function Calendar() {
                                 );
                                 setSelectedDate(null);
                             }}
-                            className="text-gray-300 hover:text-blue-600 transition"
+                            className="text-gray-500 hover:text-blue-600 transition"
                         >
                             →
                         </button>

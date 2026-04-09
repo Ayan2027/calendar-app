@@ -29,11 +29,31 @@ export default function CalendarGrid({
     const days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 
     const holidays = {
+        "2026-01-01": { name: "New Year", type: "national" },
+        "2026-01-14": { name: "Makar Sankranti", type: "festival" },
         "2026-01-26": { name: "Republic Day", type: "national" },
+
+        "2026-02-18": { name: "Maha Shivratri", type: "festival" },
+
+        "2026-03-08": { name: "Holi", type: "festival" },
+
+        "2026-04-14": { name: "Ambedkar Jayanti", type: "national" },
+        "2026-04-18": { name: "Good Friday", type: "national" },
+
+        "2026-05-01": { name: "Labour Day", type: "national" },
+
         "2026-08-15": { name: "Independence Day", type: "national" },
+        "2026-08-29": { name: "Raksha Bandhan", type: "festival" },
+
+        "2026-09-07": { name: "Janmashtami", type: "festival" },
+
         "2026-10-02": { name: "Gandhi Jayanti", type: "national" },
-        "2026-03-14": { name: "Holi", type: "festival" },
+        "2026-10-12": { name: "Dussehra", type: "festival" },
+
         "2026-11-01": { name: "Diwali", type: "festival" },
+        "2026-11-03": { name: "Bhai Dooj", type: "festival" },
+
+        "2026-12-25": { name: "Christmas", type: "national" },
     };
 
     return (
@@ -142,7 +162,7 @@ ${isSaturday && !isSelected && !isToday ? "text-yellow-500" : ""}
                                 {isHoliday && hoveredDate === dateKey && (
                                     <div className="absolute z-30 bottom-14 left-1/2 -translate-x-1/2 bg-white border shadow-xl rounded-lg px-3 py-2 text-xs">
                                         <p className="font-semibold text-purple-700">
-                                            🎉 {isHoliday.name}
+                                            {isHoliday.type === "national" ? "🇮🇳" : "🎉"} {isHoliday.name}
                                         </p>
                                     </div>
                                 )}
