@@ -1,16 +1,113 @@
-# React + Vite
+# 📅 Modern Calendar App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually rich and interactive calendar application built using **React (Vite)** and **Tailwind CSS**, featuring dynamic date selection, notes, and seasonal UI enhancements.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+### 📆 Calendar Functionality
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Real-time calendar with **month navigation**
+* **Date range selection**
+* Highlighted **current day**
+* Accurate **weekday alignment (Mon–Sun)**
 
-## Expanding the ESLint configuration
+### 📝 Notes System
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Add notes for:
+
+  * Single dates
+  * Entire date ranges
+* Notes stored in **localStorage (persistent)**
+* Visual indicators for saved notes
+
+### 🎨 UI & UX Enhancements
+
+* Dynamic **season-based header images**
+* Adaptive **gradients per season**
+* Weather icons:
+
+  * ❄️ Winter
+  * 🌸 Spring
+  * ☀️ Summer
+  * 🌧️ Monsoon
+  * 🍂 Autumn
+* Smooth animations using **Framer Motion**
+
+### 🌍 Smart Highlights
+
+* Weekends highlighted (Saturday & Sunday)
+* Indian holidays:
+  * Tooltip on hover
+* Upcoming holiday indicators
+
+---
+
+## 🛠️ Tech Stack
+
+* **React (Vite)**
+* **Tailwind CSS**
+* **Framer Motion**
+* **LocalStorage API**
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/calendar-app.git
+cd calendar-app
+npm install
+npm run dev
+```
+
+---
+
+## 📸 Features Preview
+
+* Dynamic calendar UI
+* Range selection
+* Notes with persistence
+* Seasonal theming
+* Holiday tooltips
+
+---
+
+## 🧠 Key Concepts Implemented
+
+* State management with React hooks
+* Dynamic rendering based on date logic
+* Conditional styling with Tailwind
+* API integration with fallback handling
+* Clean component-based architecture
+
+---
+
+## 🎯 Future Improvements
+
+* Drag-to-select date range
+* Event reminders
+* Google Calendar integration
+* User authentication
+
+---
+
+## 🙌 Author
+
+**Ayan Dhal**
+
+---
+
+## ⭐ Why This Project?
+
+This project demonstrates:
+
+* Strong frontend fundamentals
+* Real-world feature implementation
+* UI/UX thinking
+* Clean and scalable code structure
+
+---
+
+
