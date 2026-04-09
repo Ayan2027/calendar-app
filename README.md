@@ -110,4 +110,12 @@ This project demonstrates:
 
 ---
 
+## 📌 Live Demo (Optional)
 
+Add your deployed link here (Vercel)
+
+```
+https://calendar-app-smoky-sigma.vercel.app/
+```
+
+---
